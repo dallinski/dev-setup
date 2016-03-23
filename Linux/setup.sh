@@ -12,7 +12,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 sudo apt-get install zsh
 sudo apt-get install wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-# TODO: set theme to afowler
+export ZSH_THEME="afowler"
 
 
 sudo apt-get install guake
