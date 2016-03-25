@@ -64,6 +64,6 @@ sudo apt-get install playonlinux
 
 
 # Pushbullet
-udo add-apt-repository ppa:atareao/atareao
+sudo add-apt-repository ppa:atareao/atareao
 sudo apt-get update
 sudo apt-get install pushbullet-indicator
