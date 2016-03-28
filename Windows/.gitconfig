@@ -1,5 +1,5 @@
 [user]
-	email = dcchristensen@verisk.com
+	email = dallin.christensen@gmail.com
 	name = Dallin Christensen
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -14,9 +14,3 @@
 	cmd = \"C:/Program Files (x86)/Meld/Meld.exe\" $(cygpath -w $BASE) $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) -o $(cygpath -w $MERGED)
 [core]
 	editor = nano
-	excludesfile = /home/I56555/.gitignore_global
-	filemode = false
-[push]
-	default = simple
-[credential]
-	helper = !\"C:/Program Files (x86)/Git/libexec/git-core/git-credential-wincred.exe\"
