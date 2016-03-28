@@ -7,6 +7,9 @@ sudo apt-get install git
 git config --global user.name "Dallin Christensen"
 git config --global user.email dallin.christensen@gmail.com
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+sudo apt-get install meld
+git config --global diff.tool meld
+git config --global merge.tool meld
 
 
 # Guake (dropdown terminal)
@@ -22,8 +25,6 @@ export ZSH_THEME="afowler"
 
 # Pithos (Pandora client)
 sudo apt-get install pithos
-sudo add-apt-repository ppa:pithos/ppa
-sudo apt-get update
 
 
 # Darktable
