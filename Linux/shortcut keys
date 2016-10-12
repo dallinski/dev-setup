@@ -1,6 +1,6 @@
 Audio back		xdotool key XF86AudioPrev
 Audio next		xdotool key XF86AudioNext
-Sublime Text 3		/home/dallin/dev/ActivateOrLaunch.sh subl
-IntelliJ		/home/dallin/dev/ActivateOrLaunch.sh /opt/idea-IU-162.2032.8/bin/idea.sh
-Chrome		/home/dallin/dev/ActivateOrLaunch.sh chrome
-Spotify		/home/dallin/dev/ActivateOrLaunch.sh spotify
+Sublime Text 3		/home/dallin/dev/dev-setup/ActivateOrLaunch.sh subl
+IntelliJ		/home/dallin/dev/dev-setup/ActivateOrLaunch.sh /opt/idea-IU-162.2032.8/bin/idea.sh
+Chrome		/home/dallin/dev/dev-setup/ActivateOrLaunch.sh chrome
+Spotify		/home/dallin/dev/dev-setup/ActivateOrLaunch.sh spotify
