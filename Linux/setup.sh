@@ -81,5 +81,22 @@ sudo add-apt-repository ppa:paolorotolo/android-studio
 sudo apt-get update
 sudo apt-get install android-studio
 
+
 # alacarte
 sudo apt-get install alacarte
+
+
+# IntelliJ Professional
+# First have to install ubuntu-make
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt-get update
+sudo apt-get install ubuntu-make
+umake ide idea-ultimate
+
+
+# GRUB customizer
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+
+
