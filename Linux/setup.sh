@@ -77,6 +77,9 @@ sudo apt-get install oracle-java8-installer
 
 
 # Android Studio
-
+sudo add-apt-repository ppa:paolorotolo/android-studio
+sudo apt-get update
+sudo apt-get install android-studio
 
 # alacarte
+sudo apt-get install alacarte
