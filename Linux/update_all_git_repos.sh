@@ -24,19 +24,18 @@ for i in $(find . -name ".git" | cut -c 3-); do
 
     if [[ -z $(git status -s) ]]
     then
-      # echo "no changes"
+      git pull origin $branch;
+    elif [[ $(git status -s) == "?? .idea/" ]]
+    then
+      # the only changes are in the .idea directory
+      git pull origin $branch;
+    elif [[ $(git status -s) == *".iml" ]]
+    then
+      # the only change is a .iml file from IntelliJ
       git pull origin $branch;
     else
-      if [[ $(git status -s) == "?? .idea/" ]]
-      then
-        # the only changes are in the .idea directory
-        # echo "no changes"
-        # finally pull
-        git pull origin $branch;
-      else
-        echo "\e[1;31mChanges exist. Not pulling.\e[0m"
-        git status -s
-      fi
+      echo "\e[1;31mChanges exist. Not pulling.\e[0m"
+      git status -s
     fi
 
     # lets get back to the CUR_DIR
