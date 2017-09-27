@@ -27,6 +27,9 @@ for i in $(find . -name ".git" | cut -c 3-); do
       echo "\e[33m"$i" \e[0;31mnot on any branch\e[0m"
     fi
 
+    git remote prune origin;
+    git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep origin) | awk '{print $1}' | xargs git branch -d;
+
     if [[ -z $(git status -s) ]]
     then
       git pull origin $branch;
