@@ -35,7 +35,7 @@ if application "Spotify" is running then
 		if player state is playing then
 			return my FormatArtistAndTrack((get artist of current track) & " - " & (get name of current track)) & " (" & my FormatSeconds(get player position as integer) & "/" & my FormatSeconds(my MillisToSeconds(get duration of current track)) & ")"
 		else
-			return (get artist of current track) & " - " & (get name of current track) & " ⏸"
+			return my FormatArtistAndTrack((get artist of current track) & " - " & (get name of current track)) & " ⏸"
 		end if
 	end tell
 else
