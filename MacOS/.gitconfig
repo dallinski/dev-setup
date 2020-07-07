@@ -1,0 +1,30 @@
+[user]
+	name = Dallin Christensen
+	email = dallin@lovelandinnovations.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	stashpull = "!f() { git stash && git pull && git stash pop;  }; f"
+[diff]
+	tool = meld
+[difftool "meld"]
+	trustExitCode = true
+	cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
+[merge]
+	tool = meld
+[mergetool "meld"]
+	trustExitCode = true
+	cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
+[core]
+	excludesfile = /Users/dallin/.gitignore
+[difftool "sourcetree"]
+	cmd = meld $LOCAL $REMOTE
+	path = 
+[mergetool "sourcetree"]
+	cmd = meld $BASE $LOCAL $REMOTE -o $MERGED
+	trustExitCode = true
+[commit]
+	template = /Users/dallin/.stCommitMsg
+[status]
+	submoduleSummary = true
+[pull]
+	rebase = true
