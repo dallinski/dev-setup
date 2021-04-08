@@ -156,6 +156,8 @@ brew tap caskroom/versions
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
+brew cask install --appdir="~/Applications" java8
+brew cask install --appdir="~/Applications" java11
 brew cask install --appdir="~/Applications" xquartz
 brew cask install --appdir="~/Applications" vlc
 
@@ -170,7 +172,7 @@ brew cask install --appdir="/Applications" intellij-idea
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 # brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 # brew cask install --appdir="/Applications" dropbox
 # brew cask install --appdir="/Applications" evernote
@@ -182,6 +184,7 @@ brew cask install --appdir="/Applications" gimp
 brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" meld
 brew cask install --appdir="/Applications" spectacle
+brew cask install --appdir="/Applications" android-platform-tools
 
 
 #Remove comment to install LaTeX distribution MacTeX
